@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>A little world, just for you</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Cormorant+Garamond:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="lock">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="mc" viewBox="0 0 120 110">
+<ellipse cx="60" cy="86" rx="30" ry="21" fill="#fff" stroke="#f3bfd5" stroke-width="2"/>
+<ellipse cx="44" cy="104" rx="12" ry="6" fill="#fff" stroke="#f3bfd5" stroke-width="2"/><ellipse cx="76" cy="104" rx="12" ry="6" fill="#fff" stroke="#f3bfd5" stroke-width="2"/>
+<circle cx="25" cy="30" r="14" fill="#fff" stroke="#f3bfd5" stroke-width="2"/><circle cx="95" cy="30" r="14" fill="#fff" stroke="#f3bfd5" stroke-width="2"/>
+<circle cx="25" cy="30" r="7" fill="#ffc9dd"/><circle cx="95" cy="30" r="7" fill="#ffc9dd"/>
+<ellipse cx="60" cy="58" rx="44" ry="36" fill="#fff" stroke="#f3bfd5" stroke-width="2"/>
+<circle cx="43" cy="60" r="5" fill="#3b2a4d"/><circle cx="77" cy="60" r="5" fill="#3b2a4d"/>
+<circle cx="44.8" cy="58" r="1.8" fill="#fff"/><circle cx="78.8" cy="58" r="1.8" fill="#fff"/>
+<ellipse cx="30" cy="70" rx="8" ry="5" fill="#ffb0cf" opacity=".75"/><ellipse cx="90" cy="70" rx="8" ry="5" fill="#ffb0cf" opacity=".75"/>
+<path d="M53 70q3.5 5 7 0q3.5 5 7 0" fill="none" stroke="#3b2a4d" stroke-width="2.2" stroke-linecap="round"/>
+<g transform="translate(32 20) rotate(-18) scale(.62)"><path d="M0 0C-16-16-36-12-34 0c2 12 24 12 34 0zM0 0C16-16 36-12 34 0c-2 12-24 12-34 0z" fill="#ff6b9d" stroke="#e8467f" stroke-width="2"/><circle r="7" fill="#ff3f7f"/></g>
+</symbol>
+<symbol id="hrt" viewBox="0 0 24 24"><path class="f" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/><path d="M7 7.5c1-1.4 2.6-1.6 3.4-.9" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" opacity=".75"/></symbol>
+<symbol id="bw" viewBox="-40 -20 80 40"><path class="f" d="M0 0C-16-16-36-12-34 0c2 12 24 12 34 0zM0 0C16-16 36-12 34 0c-2 12-24 12-34 0z" stroke="#e8467f" stroke-width="2"/><circle r="7" fill="#ff3f7f"/></symbol></defs></svg>
+<canvas id="fx"></canvas><div id="cur"></div><button id="snd" aria-label="Toggle sound">🔇</button>
+
+<div id="intro">
+<div class="fl"><i class="halo"></i><span class="bub on" style="left:80%;bottom:86%">Hi there! 🎀</span><svg id="hc" class="big" viewBox="0 0 120 110"><use href="#mc"/></svg></div>
+<h1>Hey, Asmaetyyyyy! ✨</h1><p>Someone has prepared a little surprise for you…</p>
+<button class="btn" id="enter">Discover your little world</button>
+</div>
+
+<main>
+<section id="s2"><h2 class="hand rv">A little message for you</h2>
+<div id="env" role="button" tabindex="0" aria-label="Open the envelope"><div class="flap"></div><div class="fr"></div><svg class="seal" style="--c:#ff6b9d;width:78px" viewBox="-40 -20 80 40"><use href="#bw"/></svg></div>
+<p class="hand hint">Tap the envelope ✉️</p>
+<div id="letter" class="glass">
+<p>Some people have something special about them.</p>
+<p>Not just their appearance, although yours is honestly hard to ignore…</p>
+<p>But the way they treat others, their kindness, their personality, and the little things that make them who they are.</p>
+<p>You’re genuinely one of the kindest people I’ve ever met.</p>
+<p>And I just thought someone should remind you how special that is. 💗</p>
+</div></section>
+
+<section id="s3"><h2 class="rv">The Beauty Museum</h2><p class="hand rv">Three little exhibits. Please admire responsibly.</p>
+<div class="cards">
+<div class="cw"><article class="card"><i class="dc" style="top:12px;right:16px">✨</i><b class="em">🎀</b><h3>A beautiful face</h3><p>Some people make even the simplest moments look beautiful.</p></article></div>
+<div class="cw"><article class="card"><i class="dc" style="top:12px;right:16px">💗</i><b class="em">💖</b><h3>A beautiful soul</h3><p>Your kindness is something that deserves its own little spotlight.</p></article></div>
+<div class="cw"><article class="card"><i class="dc" style="top:12px;right:16px">🌷</i><b class="em">🌟</b><h3>A beautiful personality</h3><p>The little things about you are what make you unforgettable.</p></article></div>
+</div></section>
+
+<section id="s4"><h2 class="rv">Mochi’s Kawaii Kingdom 🎀</h2><p class="hand rv">Pop the floating hearts. Mochi has a few things to say.</p>
+<div id="yard"><i class="cloud" style="top:9%;left:4%"></i><i class="cloud" style="top:24%;left:55%;animation-delay:-14s"></i><div class="ct" id="m4"><div class="bub"></div><svg viewBox="0 0 120 110"><use href="#mc"/></svg></div></div>
+<p class="hand">Hearts popped: <b id="hp">0</b> 💗</p></section>
+
+<section id="s5"><h2 class="rv">Help Mochi Collect Her Hearts!</h2><p class="rv">Mochi’s magical hearts floated all over the garden. Collect 10 before time runs out!</p>
+<div id="gw"><canvas id="g" width="640" height="400"></canvas>
+<div id="hud"><span>💗 <b id="sc">0</b>/10</span><span>⏱ <b id="tm">30</b>s</span></div>
+<div id="ov" class="glass"><h3 id="ot" class="hand" style="font-size:2.2rem">Ready?</h3><p id="od"></p><button class="btn" id="play">Start</button></div></div></section>
+
+<section id="s6"><div class="moon" data-px=".08"></div><i class="bfl" style="top:22%">🦋</i><i class="bfl" style="top:46%;animation-delay:-6s">🦋</i><i class="bfl" style="top:68%;animation-delay:-10s">🦋</i>
+<div class="stag"><h2>Every fairytale has its own kind of magic.</h2><p>Some have castles, some have princesses…</p><p>And some simply have people who make the world a little more beautiful.</p></div>
+<svg class="castle" viewBox="0 -24 400 294" aria-hidden="true">
+<g fill="#ffe6f1"><rect x="150" y="110" width="100" height="160"/><rect x="62" y="152" width="62" height="118"/><rect x="276" y="152" width="62" height="118"/><rect x="18" y="196" width="40" height="74"/><rect x="342" y="196" width="40" height="74"/></g>
+<g fill="#ff8fb8"><path d="M140 112 200 14l60 98z"/><path d="M52 154 93 84l41 70z"/><path d="M266 154l41-70 41 70z"/><path d="M10 198 38 148l28 50z"/><path d="M334 198l28-50 28 50z"/></g>
+<g fill="#ffe28f"><rect x="190" y="138" width="20" height="34" rx="10"/><rect x="86" y="180" width="14" height="24" rx="7"/><rect x="300" y="180" width="14" height="24" rx="7"/><rect x="31" y="222" width="12" height="20" rx="6"/><rect x="357" y="222" width="12" height="20" rx="6"/></g>
+<path d="M176 270v-46a24 24 0 0 1 48 0v46z" fill="#ff8fb8"/><g style="--c:#ff4f8b"><use href="#hrt" x="188" y="-6" width="24" height="24"/><use href="#hrt" x="82" y="66" width="22" height="22"/><use href="#hrt" x="296" y="66" width="22" height="22"/></g></svg>
+<div class="row6"><span>🌷</span><span>🦄</span><span>🎀</span><span>🐇</span><span>🌸</span><span>🧸</span><span>💖</span></div></section>
+
+<section id="s7"><div class="moon" data-px=".05"></div>
+<div class="stag"><p>Before you leave…</p><p>Never underestimate how beautiful your presence can be in someone’s day.</p><p>Stay kind, stay wonderful, and never stop being yourself.</p><p>And remember…</p><p class="fin">Some people deserve a little extra happiness. You are definitely one of them. ✨</p>
+<svg class="tree" viewBox="0 0 300 230" aria-hidden="true"><ellipse cx="150" cy="215" rx="140" ry="12" fill="#17123f"/><path d="M138 215c4-50 2-90-4-120h30c-6 30-4 70 2 120z" fill="#6b4545"/><g fill="#ffb6d5"><circle cx="150" cy="70" r="52"/><circle cx="100" cy="95" r="38"/><circle cx="200" cy="95" r="38"/><circle cx="150" cy="105" r="40" fill="#ffc9e0"/></g><use href="#mc" x="166" y="146" width="72" height="66"/></svg>
+<p class="hand">Made with a little creativity, a lot of thought, and a special smile in mind. 💗</p>
+<div><button class="btn" id="replay">Replay my little world</button></div></div></section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
